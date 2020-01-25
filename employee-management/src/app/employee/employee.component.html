@@ -1,0 +1,23 @@
+<table border="1">
+    <thead></thead>
+    <tr>
+      <th>EmployeeId</th>
+      <th>EmployeeName</th>
+      <th>ParcelNumber</th>
+      <th>CompanyName</th>
+      <th>Rack</th>
+      <th></th>
+    </tr>
+    
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.empId}}</td>
+            
+            <td>{{employee.name}}</td>
+            <td>{{employee.parcelnumber}}</td>
+            <td>{{employee.cname}}</td>
+            <td>{{employee.rack}}</td>
+            <td><button>Handover</button></td>            
+          </tr>
+    </tbody>
+      </table>
